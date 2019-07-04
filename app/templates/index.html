@@ -5,10 +5,13 @@
 		</title>
 	</head>
 	<body>
+		{%extends 'navigation.html'%}
+		{% block content %}
 		<h1>hello,{{user.username}}!</h1>
 		{%for i in posts%}
 		<div><p>{{i.a.username}} says : <b>{{i.body}}</b></p> </div>
 		{% endfor %}
+		{% endblock %}
 	</body>
 </html>
 
