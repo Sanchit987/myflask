@@ -6,6 +6,9 @@
 	</head>
 	<body>
 		<h1>hello,{{user.username}}!</h1>
+		{%for i in posts%}
+		<div><p>{{i.a.username}} says : <b>{{i.body}}</b></p> </div>
+		{% endfor %}
 	</body>
 </html>
 
