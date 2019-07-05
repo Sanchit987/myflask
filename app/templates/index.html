@@ -11,6 +11,11 @@
 		{%for i in posts%}
 		<div><p>{{i.a.username}} says : <b>{{i.body}}</b></p> </div>
 		{% endfor %}
+		<form method="POST">
+			<p>Name <input name="text"></p>
+			<p>Data <input data="text"></p>
+		        <input type="submit">
+		</form>
 		{% endblock %}
 	</body>
 </html>
